@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 1fr;
+    grid-template-areas: 
+        "header header header header"
+        "music music about about"
+        "music music contact services"
+        "credits credits credits services";
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    grid-area: header;
+    border: 1px solid black;
+}
+
+.music {
+    grid-area: music;
+    border: 2px solid black;
+}
+
+.about {
+    grid-area: about;
+    border: 2px solid black;
+}
+
+.contact {
+    grid-area: contact;
+    border: 2px solid black;
+}
+
+.services {
+    grid-area: services;
+    border: 2px solid black;
+}
+
+.credits {
+    grid-area: credits;
+    border: 2px solid black;
+}
