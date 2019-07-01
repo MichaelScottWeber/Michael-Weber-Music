@@ -12,36 +12,41 @@
         "music music about about"
         "music music contact services"
         "credits credits credits services";
+    grid-gap: 20px;
     height: 100vh;
     width: 100vw;
 }
 
+h2 {
+    font-size: 2em;
+}
+
 .header {
     grid-area: header;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .music {
     grid-area: music;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .about {
     grid-area: about;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .contact {
     grid-area: contact;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .services {
     grid-area: services;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .credits {
     grid-area: credits;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }

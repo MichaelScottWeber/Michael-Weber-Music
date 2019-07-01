@@ -1,12 +1,11 @@
 import React from 'react';
-
-import WavesurferComponent from './WavesurferComponent'
+import MusicPlayer from './MusicPlayer';
 
 class MusicDetails extends React.Component {
     render() {
         return (
             <div className="music-details">
-                <WavesurferComponent />
+                <MusicPlayer />
             </div>
         )
     }

@@ -2,7 +2,10 @@ import React from 'react';
 
 const MenuButton = ({ onMenuBtnClick }) => {
     return (
-        <div onClick={() => onMenuBtnClick()}>
+        <div 
+            className="menu-button"
+            onClick={() => onMenuBtnClick()}
+        >
             Button
         </div>
     )
