@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PlayingAnimation from './PlayingAnimation';
 import Colours from "../../../audio/Colours-Run-Together.mp3";
 import Dreams from "../../../audio/Dreams-For-Tomorrow.mp3";
 import LetsGo from "../../../audio/Let's-Go.mp3";
@@ -7,11 +7,12 @@ import Mountain from "../../../audio/Mountain-Shade.mp3";
 import Rev from "../../../audio/Rev-Me-Up.mp3";
 import Finer from "../../../audio/The-Finer-Things.mp3";
 import Gates from "../../../audio/The-Gates-of-Agartha.mp3";
+import './MusicPlayer.css';
 
 class MusicPlayer extends React.Component {
     state = { 
         selectedTrack: null,
-        playerStatus: 'stopped',
+        // playerStatus: 'stopped',
     };
 
     componentDidUpdate(prevProps, prevState) {
@@ -45,7 +46,7 @@ class MusicPlayer extends React.Component {
             if (track) {
                 this.player.src = track;
                 this.player.play();
-                this.setState({ playerStatus: 'playing' });
+                // this.setState({ playerStatus: 'playing' });
             }
         }
     }
@@ -83,17 +84,27 @@ class MusicPlayer extends React.Component {
         ].map((item) => {
             return (
                 <li
+                    className="song-item"
                     key={item.id}
-                    onClick={() => this.setState({ selectedTrack: item.title })}
                 >
-                    {item.title}
+                    <span 
+                        className="song-title"
+                        onClick={() => this.setState({ selectedTrack: item.title })}
+                    >
+                        {item.title}
+                    </span>
+                    <PlayingAnimation 
+                        selectedTrack={this.state.selectedTrack}
+                        itemTitle={item.title}
+                    />
                 </li>
             );
         });
 
         return (
-            <div>
-                <ul>{songList}</ul>
+            <div className="music-player">
+                <h3 className="music-player-title">Click on a song title to listen</h3>
+                <ul className="song-group">{songList}</ul>
                 <audio 
                     ref={(ref) => (
                         this.player = ref

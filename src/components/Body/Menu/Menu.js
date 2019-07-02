@@ -3,12 +3,8 @@ import './Menu.css';
 
 const Menu = ({ onSectionClick }) => {
     return (
-        <div
-            className="menu"
-        >
-            <ul
-                className="menu-list"
-            >
+        <div className="menu">
+            <ul className="menu-list">
                 <li 
                     className="menu-item"
                     onClick={() => onSectionClick('home')}

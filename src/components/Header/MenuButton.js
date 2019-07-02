@@ -6,7 +6,7 @@ const MenuButton = ({ onMenuBtnClick }) => {
             className="menu-button"
             onClick={() => onMenuBtnClick()}
         >
-            Button
+            Menu
         </div>
     )
 }

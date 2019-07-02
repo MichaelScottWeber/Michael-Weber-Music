@@ -1,0 +1,41 @@
+@keyframes scale {
+    from { transform: scale(1, 1) }
+    to { transform: scale(1, .2) }
+}
+
+@keyframes colorchange {
+    from { background-color: slategray }
+    to { background-color: black }
+}
+
+.playing-animation {
+    display: flex;
+}
+
+.waves {
+    background-color: slategrey;
+    height: 20px;
+    width: 5px;
+    margin: 2px;
+    border-radius: 20px;
+}
+
+.wave1 {
+    animation: scale .5s linear 0s infinite alternate, colorchange 1.2s linear 0s infinite alternate;
+}
+
+.wave2 {
+    animation: scale .55s linear .3s infinite alternate,colorchange 1.5s linear 0s infinite alternate;
+}
+
+.wave3 {
+    animation: scale .4s linear .1s infinite alternate, colorchange 1.1s linear 0s infinite alternate;
+}
+
+.wave4 {
+    animation: scale .6s linear .3s infinite alternate,colorchange 1.65s linear 0s infinite alternate;
+}
+
+.wave5 {
+    animation: scale .5s linear .1s infinite alternate, colorchange 1.3s linear 0s infinite alternate;
+}
