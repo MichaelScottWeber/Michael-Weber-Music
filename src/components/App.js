@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Header from './Header/Header';
 import AboutIntro from './Body/About/AboutIntro';
 import AboutDetails from './Body/About/AboutDetails';
@@ -75,10 +74,10 @@ class App extends React.Component {
                     }
                 </div>
                 <div className="services">
-                    {this.state.display === 'services' ? 
-                        <ServicesDetails 
+                    {this.state.display === 'services'
+                        ? <ServicesDetails 
                             onSectionClick={this.onSectionClick}
-                        /> 
+                        />
                         : <ServicesIntro 
                             onSectionClick={this.onSectionClick}
                         />

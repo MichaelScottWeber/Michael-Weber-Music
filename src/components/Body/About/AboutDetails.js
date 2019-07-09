@@ -1,17 +1,28 @@
 import React from 'react';
+import {Spring, config} from 'react-spring/renderprops';
 
 import './AboutDetails.css';
 
 const AboutDetails = ({ onSectionClick }) => {
     return (
-        <div 
-            className="about-details" 
-            onClick={() => onSectionClick('home')}
+        <Spring
+            from={{ opacity: 0, transform: 'translate3d(-50%,0,0)' }}
+            to={{ opacity: 1, transform: 'translate3d(0%,0,0)' }}
+            config={ config.stiff }
         >
-            <p>
-                Award winning composer, producer and performer from the Chicago, Illinois area. His music has been used all over the world by such companies as Fox Sports, CBS, A&E, State Farm and others.
-            </p>
-        </div>
+            {props => (
+                <section 
+                    style={props}
+                    className="about-details" 
+                    onClick={() => onSectionClick('home')}
+                >
+                    <p>
+                        Award winning composer, producer and performer from the Chicago, Illinois area. His music has been used all over the world by such companies as Fox Sports, CBS, A&E, State Farm and others.
+                    </p>
+                </section>
+            
+            )}
+        </Spring>
     )
 }
 

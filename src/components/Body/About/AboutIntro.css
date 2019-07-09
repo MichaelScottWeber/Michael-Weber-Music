@@ -1,4 +1,5 @@
 .about-intro {
+    position: relative;
     width: 100%;
     height: 100%;
     cursor: pointer;
@@ -8,4 +9,27 @@
     color: white;
     margin: 0;
     padding: 20px;
+    flex-grow: 1;
+}
+
+.about-intro h2 {
+    position: relative;
+    z-index: 1;
+}
+
+.about-intro .overlay {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: white;
+    z-index: 2;
+    transition: .2s;
+}
+
+.about-intro .overlay:hover {
+    opacity: .1;
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Spring, config} from 'react-spring/renderprops';
 import PlayingAnimation from './PlayingAnimation';
 import Colours from "../../../audio/Colours-Run-Together.mp3";
 import Dreams from "../../../audio/Dreams-For-Tomorrow.mp3";
@@ -102,15 +103,26 @@ class MusicPlayer extends React.Component {
         });
 
         return (
-            <div className="music-player">
-                <h3 className="music-player-title">Click on a song title to listen</h3>
-                <ul className="song-group">{songList}</ul>
-                <audio 
-                    ref={(ref) => (
-                        this.player = ref
-                    )}
-                />
-            </div>
+            <Spring
+            from={{ opacity: 0, transform: 'translate3d(100%,0,0)' }}
+            to={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+            config={ config.stiff }
+        >
+            {props => (
+                <div 
+                    style={props}
+                    className="music-player"
+                >
+                    <h3 className="music-player-title">Click on a song title to listen</h3>
+                    <ul className="song-group">{songList}</ul>
+                    <audio 
+                        ref={(ref) => (
+                            this.player = ref
+                        )}
+                    />
+                </div>
+            )}
+        </Spring>
         )
     }
 }
