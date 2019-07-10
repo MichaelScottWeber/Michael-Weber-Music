@@ -31,7 +31,7 @@ ul {
 .app {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px 1fr 1fr 1fr;
+    grid-template-rows: 60px 1fr 1fr 1fr;
     grid-template-areas: 
         "header header header header"
         "music music about about"
@@ -44,10 +44,6 @@ ul {
 
 h2 {
     font-size: 2em;
-}
-
-.services-intro {
-    height: 100%;
 }
 
 .header {

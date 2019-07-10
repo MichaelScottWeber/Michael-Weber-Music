@@ -1,4 +1,6 @@
 .music-intro {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
     position: relative;
     height: 100%;
     width: 100%;
@@ -12,6 +14,12 @@
     flex-grow: 1;
     background: url('https://images.unsplash.com/photo-1526045566106-788438d25353?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat center;
     background-size: fill;
+}
+
+@media only screen and (max-width: 600px) {
+    .music-intro {
+        border-radius: 0;
+    }
 }
 
 .music-intro h2 {
@@ -33,5 +41,5 @@
 }
 
 .music-intro .overlay:hover {
-    opacity: .1;
+    opacity: .15;
 }

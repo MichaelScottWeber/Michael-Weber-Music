@@ -1,4 +1,5 @@
 .credits-intro {
+    border-top-right-radius: 7px;
     position: relative;
     width: 100%;
     height: 100%;
@@ -10,6 +11,12 @@
     margin: 0;
     padding: 20px;
     flex-grow: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .credits-intro {
+        border-radius: 0;
+    }
 }
 
 .credits-intro h2 {
@@ -31,5 +38,5 @@
 }
 
 .credits-intro .overlay:hover {
-    opacity: .1;
+    opacity: .15;
 }
