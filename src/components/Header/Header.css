@@ -6,11 +6,12 @@
     padding: 0 20px;
 }
 
-h1 {
-    margin: 0;
-    overflow: hidden;
-}
-
 .menu-button, .title {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        padding: 5px;
+    }
 }

@@ -6,7 +6,7 @@
     height: 100%;
     cursor: pointer;
     /* background-color: rosybrown; */
-    background: url('https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat center;
+    background: url('../../../images/drums.jpg') no-repeat center;
     background-size: fill;
     color: white;
     margin: 0;

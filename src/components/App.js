@@ -34,17 +34,18 @@ class App extends React.Component {
             <div className="app">
                 <div className="header">
                     <Header 
+                        display={this.state.display}
                         onSectionClick={this.onSectionClick}
                         onMenuBtnClick={this.onMenuBtnClick}
                     />
                 </div>
                 <div className="about">
-                    {this.state.display === 'about' ? 
-                        <AboutDetails 
+                    {this.state.display === 'about' 
+                        ? <AboutDetails 
                             onSectionClick={this.onSectionClick}
                         /> 
-                        : (this.state.display === 'menu' ? 
-                            <Menu 
+                        : (this.state.display === 'menu' 
+                            ? <Menu 
                                 onSectionClick={this.onSectionClick}
                             /> 
                             : <AboutIntro 
@@ -54,8 +55,8 @@ class App extends React.Component {
                     }
                 </div>
                 <div className="music">
-                    {this.state.display === 'music' ? 
-                        <MusicDetails 
+                    {this.state.display === 'music' 
+                        ? <MusicDetails 
                             onSectionClick={this.onSectionClick}
                         /> 
                         : <MusicIntro 
@@ -64,8 +65,8 @@ class App extends React.Component {
                     }
                 </div>
                 <div className="credits">
-                    {this.state.display === 'credits' ? 
-                        <CreditsDetails 
+                    {this.state.display === 'credits' 
+                        ? <CreditsDetails 
                             onSectionClick={this.onSectionClick}
                         /> 
                         : <CreditsIntro 
@@ -84,8 +85,8 @@ class App extends React.Component {
                     }
                 </div>
                 <div className="contact">
-                    {this.state.display === 'contact' ? 
-                        <ContactDetails 
+                    {this.state.display === 'contact' 
+                        ? <ContactDetails 
                             onSectionClick={this.onSectionClick}
                         /> 
                         : <ContactIntro 

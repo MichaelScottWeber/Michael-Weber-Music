@@ -1,11 +1,12 @@
 import React from 'react';
 import {Spring, config} from 'react-spring/renderprops';
+import Logo from './Logo';
 import Title from './Title';
 import MenuButton from './MenuButton';
 
 import './Header.css';
 
-const Header = ({ onSectionClick, onMenuBtnClick }) => {
+const Header = ({ onSectionClick, onMenuBtnClick, display }) => {
     return (
         <Spring
             from={{ opacity: 0, transform: 'translate3d(0,-50%,0)' }}
@@ -13,18 +14,22 @@ const Header = ({ onSectionClick, onMenuBtnClick }) => {
             config={ config.stiff }
         >
             {props => (
-                <div 
+                <header 
                     style={props}
                     className="header"
                 >
+                    <Logo 
+                        onSectionClick={onSectionClick}
+                    />
                     <Title 
                         siteTitle='Michael Weber Music'
                         onSectionClick={onSectionClick}
                     />
                     <MenuButton 
+                        display={display}
                         onMenuBtnClick={onMenuBtnClick}
                     />
-                </div>           
+                </header>           
             )}
         </Spring>
     )

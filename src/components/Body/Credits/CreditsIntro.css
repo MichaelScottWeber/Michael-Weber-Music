@@ -5,7 +5,7 @@
     height: 100%;
     cursor: pointer;
     /* background-color: palegoldenrod; */
-    background: url('https://images.unsplash.com/photo-1498180611022-63f1e85ea7ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80') no-repeat center;
+    background: url('../../../images/guitars.jpg') no-repeat center;
     background-size: fill;
     color: white;
     margin: 0;

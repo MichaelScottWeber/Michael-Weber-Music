@@ -5,7 +5,7 @@
     height: 100%;
     cursor: pointer;
     /* background-color: darksalmon; */
-    background: url('https://images.unsplash.com/photo-1507484964334-b6f38e7d0921?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat center;
+    background: url('../../../images/piano.jpg') no-repeat center;
     background-size: fill;
     color: white;
     margin: 0;
