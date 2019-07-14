@@ -40,10 +40,12 @@ class ImageGallery extends React.Component {
 
     render() {
         return (
-            <img 
-                className="credits-image"
-                src={imageList[this.state.image]} 
-            />
+            <div className="image-gallery">
+                <img 
+                    className="credits-image"
+                    src={imageList[this.state.image]} 
+                />
+            </div>
         )
     }
 }

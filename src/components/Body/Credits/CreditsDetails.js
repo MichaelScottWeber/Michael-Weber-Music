@@ -5,6 +5,50 @@ import ImageGallery from './ImageGallery';
 import './CreditsDetails.css';
 
 const CreditsDetails = ({ onSectionClick }) => {
+
+    const creditsList = [
+        {
+            id: 1,
+            credit: 'Intervention'
+        },
+        {
+            id: 2,
+            credit: 'NFL Football'
+        },
+        {
+            id: 3,
+            credit: 'Catfish: The TV Show'
+        },
+        {
+            id: 4,
+            credit: '2016 SUmmer Olympic Games'
+        },
+        {
+            id: 5,
+            credit: 'The Daily Show with Trevor Noah'
+        },
+        {
+            id: 6,
+            credit: 'I (almost) Got Away With It'
+        },
+        {
+            id: 7,
+            credit: 'NHL Hockey'
+        },
+        {
+            id: 8,
+            credit: 'Roadtrip Nation'
+        },
+    ].map((item) => {
+        return (
+            <li
+                className="credit"
+                key={item.id}
+            >
+                {item.credit}
+            </li>
+        );
+    });
     return (
         <Spring
             from={{ opacity: 0, transform: 'translate3d(100%,0,0)' }}
@@ -20,14 +64,7 @@ const CreditsDetails = ({ onSectionClick }) => {
                     <div>
                         <h3>Credits include (partial list):</h3>
                         <ul className="credits-list">
-                            <li>Intervention</li>
-                            <li>NFL Football</li>
-                            <li>Catfish: The TV Show</li>
-                            <li>2016 Summer Olympic Games</li>
-                            <li>The Daily Show with Trevor Noah</li>
-                            <li>I (almost) Got Away With It</li>
-                            <li>NHL Hockey</li>
-                            <li>Roadtrip Nation</li>
+                            {creditsList}
                         </ul>
                     </div>
                     <ImageGallery />

@@ -40,9 +40,10 @@
 }
 
 .song-title:hover {
-    color: #BE951E;
+    color:#688ED2;
 }
 
 .song-item .selected, .selected:hover {
-    color: #688ED2
+    color: #BE951E;
+    cursor: default;
 }
