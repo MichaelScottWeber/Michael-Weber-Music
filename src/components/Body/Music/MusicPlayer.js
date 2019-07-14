@@ -89,7 +89,11 @@ class MusicPlayer extends React.Component {
                     key={item.id}
                 >
                     <span 
-                        className="song-title"
+                        className={
+                            item.title === this.state.selectedTrack
+                            ? "song-title selected"
+                            : "song-title"
+                        }
                         onClick={() => this.setState({ selectedTrack: item.title })}
                     >
                         {item.title}

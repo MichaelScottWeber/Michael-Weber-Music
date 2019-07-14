@@ -12,6 +12,7 @@
     margin: 0;
     padding: 20px;
     flex-grow: 1;
+    overflow: hidden;
 }
 
 @media only screen and (max-width: 600px) {
@@ -32,12 +33,12 @@
     top: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;
+    opacity: .15;
     background-color: white;
     z-index: 2;
     transition: .2s;
 }
 
 .about-intro .overlay:hover {
-    opacity: .15;
+    opacity: .3;
 }

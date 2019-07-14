@@ -4,8 +4,8 @@
 }
 
 @keyframes colorchange {
-    from { background-color: slategray }
-    to { background-color: black }
+    from { background-color: #4D75BF }
+    to { background-color: #886A11 }
 }
 
 .playing-animation {
