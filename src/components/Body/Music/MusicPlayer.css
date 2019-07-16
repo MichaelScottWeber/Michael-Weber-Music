@@ -44,6 +44,24 @@
 }
 
 .song-item .selected, .selected:hover {
-    color: #BE951E;
+    color: #886A11;
     cursor: default;
+}
+
+.line-hidden {
+    display: none;
+}
+
+.line-visible {
+    display: block;
+    flex-grow: 2;
+    border-bottom: 2px solid #E7D59F;
+    margin: 10px;
+    animation-name: flexgrow;
+    animation-duration: 1s;
+}
+
+@keyframes flexgrow {
+    from {flex-grow: 0.1;}
+    to {flex-grow: 2;}
 }

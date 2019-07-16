@@ -5,7 +5,7 @@
 
 @keyframes colorchange {
     from { background-color: #4D75BF }
-    to { background-color: #886A11 }
+    to { background-color: #DDC16F }
 }
 
 .playing-animation {
@@ -25,7 +25,7 @@
 }
 
 .wave2 {
-    animation: scale .55s linear .3s infinite alternate,colorchange 1.5s linear 0s infinite alternate;
+    animation: scale .55s linear .3s infinite alternate, colorchange 1.5s linear 0s infinite alternate;
 }
 
 .wave3 {
@@ -33,7 +33,7 @@
 }
 
 .wave4 {
-    animation: scale .6s linear .3s infinite alternate,colorchange 1.65s linear 0s infinite alternate;
+    animation: scale .6s linear .3s infinite alternate, colorchange 1.65s linear 0s infinite alternate;
 }
 
 .wave5 {

@@ -5,7 +5,7 @@ import './PlayingAnimation.css';
 const PlayingAnimation = ({ selectedTrack, itemTitle }) => {
     return (
         <Spring
-        from={{ opacity: 0 }}
+            from={{ opacity: 0 }}
             to={{ opacity: selectedTrack === itemTitle ? 1 : 0 }}
         >
             {props => (

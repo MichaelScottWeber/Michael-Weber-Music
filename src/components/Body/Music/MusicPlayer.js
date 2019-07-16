@@ -1,6 +1,7 @@
 import React from 'react';
 import {Spring, config} from 'react-spring/renderprops';
 import PlayingAnimation from './PlayingAnimation';
+import line from "../../../images/line.svg";
 import Colours from "../../../audio/Colours-Run-Together.mp3";
 import Dreams from "../../../audio/Dreams-For-Tomorrow.mp3";
 import LetsGo from "../../../audio/Let's-Go.mp3";
@@ -98,6 +99,13 @@ class MusicPlayer extends React.Component {
                     >
                         {item.title}
                     </span>
+                    <div
+                        className={
+                            item.title === this.state.selectedTrack
+                            ? "line-visible"
+                            : "line-hidden"
+                        }
+                    ></div>
                     <PlayingAnimation 
                         selectedTrack={this.state.selectedTrack}
                         itemTitle={item.title}
