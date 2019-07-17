@@ -1,98 +1,105 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    overflow: auto;
+	box-sizing: border-box;
+	margin: 0;
+	overflow: auto;
 }
 
-body, html {
-    background-color: #F6F7F7;
-    height: 100%;
-    width: 100%;
-    /* font-family: 'Raleway', sans-serif; */
-    /* font-family: 'Amatic SC', cursive; */
-    /* font-family: 'Dosis', sans-serif; */
-    /* font-family: 'Barlow Condensed', sans-serif; */
-    /* font-family: 'Fjalla One', sans-serif; */
-    /* font-family: 'Karla', sans-serif; */
-    /* font-family: 'Abel', sans-serif; */
-    font-family: 'Barlow', sans-serif;
-    /* font-family: 'Poiret One', cursive; */
-    /* font-family: 'Syncopate', sans-serif; */
-    /* font-family: 'Anonymous Pro', monospace; */
-    /* font-family: 'Rosario', sans-serif; */
-    /* font-family: 'Cutive Mono', monospace; */
-    /* font-family: 'Nunito', sans-serif; */
-    /* font-family: 'Quicksand', sans-serif; */
+body,
+html {
+	background-color: #f6f7f7;
+	height: 100%;
+	width: 100%;
+	/* font-family: 'Raleway', sans-serif; */
+	/* font-family: 'Amatic SC', cursive; */
+	/* font-family: 'Dosis', sans-serif; */
+	/* font-family: 'Barlow Condensed', sans-serif; */
+	/* font-family: 'Fjalla One', sans-serif; */
+	/* font-family: 'Karla', sans-serif; */
+	/* font-family: 'Abel', sans-serif; */
+	font-family: 'Barlow', sans-serif;
+	/* font-family: 'Poiret One', cursive; */
+	/* font-family: 'Syncopate', sans-serif; */
+	/* font-family: 'Anonymous Pro', monospace; */
+	/* font-family: 'Rosario', sans-serif; */
+	/* font-family: 'Cutive Mono', monospace; */
+	/* font-family: 'Nunito', sans-serif; */
+	/* font-family: 'Quicksand', sans-serif; */
 }
 
-h1, h2, h3 {
-    font-family: 'Poiret One', sans-serif;
-    font-weight: 300;
+h1,
+h2,
+h3 {
+	font-family: 'Poiret One', sans-serif;
+	font-weight: 300;
 }
 
 ul {
-    padding-inline-start: 0;
+	padding-inline-start: 0;
 }
 
 .app {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 60px 1fr 1fr 1fr;
-    grid-template-areas: 
-        "header header header header"
-        "music music about about"
-        "music music contact services"
-        "credits credits credits services";
-    grid-gap: 25px;
-    height: 100vh;
-    width: 100vw;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 60px 1fr 1fr 1fr;
+	grid-template-areas:
+		'header header header header'
+		'music music about about'
+		'music music contact services'
+		'credits credits credits services';
+	grid-gap: 25px;
+	height: 100vh;
+	width: 100vw;
 }
 
 h2 {
-    font-size: 2em;
+	font-size: 2em;
 }
 
 .header {
-    grid-area: header;
-    /* border: 1px solid black; */
+	grid-area: header;
+	/* border: 1px solid black; */
 }
 
 .music {
-    grid-area: music;
-    /* border: 2px solid black; */
+	grid-area: music;
+	/* border: 2px solid black; */
 }
 
 .about {
-    grid-area: about;
-    /* border: 2px solid black; */
+	grid-area: about;
+	/* border: 2px solid black; */
 }
 
 .contact {
-    grid-area: contact;
-    /* border: 2px solid black; */
+	grid-area: contact;
+	/* border: 2px solid black; */
 }
 
 .services {
-    grid-area: services;
-    /* border: 2px solid black; */
+	grid-area: services;
+	/* border: 2px solid black; */
 }
 
 .credits {
-    grid-area: credits;
-    /* border: 2px solid black; */
+	grid-area: credits;
+	/* border: 2px solid black; */
 }
 
 @media only screen and (max-width: 600px) {
-    .app {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: stretch;
-    }
-    .header {
-        margin-bottom: 10px;
-    }
-    .about, .music, .credits, .services, .contact {
-        flex-grow: 1;
-    }
-  }
+	.app {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: stretch;
+	}
+	.header {
+		margin-bottom: 10px;
+	}
+	.about,
+	.music,
+	.credits,
+	.services,
+	.contact {
+		flex-grow: 1;
+	}
+}

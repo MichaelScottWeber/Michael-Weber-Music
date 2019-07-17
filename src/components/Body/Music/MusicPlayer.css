@@ -1,67 +1,82 @@
 .music-player {
-    color: #082728;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    padding: 10px 20px;
-    margin: 0;
+	color: #082728;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	padding: 10px 20px;
+	margin: 0;
 }
 
 .song-group {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
-
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 100%;
 }
 
 .music-player-title {
-    padding: 5px;
-    overflow: hidden;
+	padding: 5px;
+	overflow: hidden;
 }
 
 .song-item {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #BEC4C4;
-    height: 100%;
-    padding: 10px;
-    font-size: 1.2em;
-    transition: all .2s;
-    overflow: hidden;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #bec4c4;
+	height: 100%;
+	padding: 10px;
+	font-size: 1.2em;
+	transition: all 0.2s;
+	overflow: hidden;
 }
 
 .song-title {
-    cursor: pointer;
-    transition: all .2s;
+	cursor: pointer;
+	transition: all 0.2s;
 }
 
 .song-title:hover {
-    color:#688ED2;
+	color: #688ed2;
 }
 
-.song-item .selected, .selected:hover {
-    color: #886A11;
-    cursor: default;
+.song-item .selected,
+.selected:hover {
+	color: #886a11;
+	cursor: default;
 }
 
 .line-hidden {
-    display: none;
+	display: none;
 }
 
 .line-visible {
-    display: block;
-    flex-grow: 2;
-    border-bottom: 2px solid #E7D59F;
-    margin: 10px;
-    animation-name: flexgrow;
-    animation-duration: 1s;
+	display: block;
+	flex-grow: 2;
+	border-bottom: 2px solid #e7d59f;
+	margin: 10px;
+	animation: flexgrow 1s, color-change 4s infinite;
 }
 
 @keyframes flexgrow {
-    from {flex-grow: 0.1;}
-    to {flex-grow: 2;}
+	from {
+		flex-grow: 0.1;
+	}
+	to {
+		flex-grow: 2;
+	}
+}
+
+@keyframes color-change {
+	0% {
+		border-bottom: 2px solid #e7d59f;
+	}
+	50% {
+		border-bottom: 2px solid #688ed2;
+	}
+	100% {
+		border-bottom: 2px solid #e7d59f;
+	}
 }
