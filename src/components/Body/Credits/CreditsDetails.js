@@ -58,11 +58,13 @@ const CreditsDetails = ({ onSectionClick }) => {
 					className="credits-details"
 					onClick={() => onSectionClick('home')}
 				>
-					<div>
-						<h3>Credits include (partial list):</h3>
-						<ul className="credits-list">{creditsList}</ul>
+					<div className="credits-container">
+						<div>
+							<h3>Credits include (partial list):</h3>
+							<ul className="credits-list">{creditsList}</ul>
+						</div>
+						<ImageGallery />
 					</div>
-					<ImageGallery />
 				</section>
 			)}
 		</Spring>

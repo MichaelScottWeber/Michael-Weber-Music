@@ -37,7 +37,7 @@ ul {
 	padding-inline-start: 0;
 }
 
-.app {
+.main {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 60px 1fr 1fr 1fr;
@@ -86,7 +86,7 @@ h2 {
 }
 
 @media only screen and (max-width: 600px) {
-	.app {
+	.main {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;

@@ -13,6 +13,10 @@
 	flex-direction: column;
 	justify-content: space-evenly;
 	height: 100%;
+	/* background-image: linear-gradient(#ebf0f0, #f6f4ed); */
+	background-color: #ebf0f0;
+	border-radius: 7px;
+	box-shadow: 2px 2px 12px -5px rgba(3, 20, 52, 0.2);
 }
 
 .music-player-title {
@@ -33,6 +37,10 @@
 	overflow: hidden;
 }
 
+.song-item:last-child {
+	border: none;
+}
+
 .song-title {
 	cursor: pointer;
 	transition: all 0.2s;
@@ -46,6 +54,7 @@
 .selected:hover {
 	color: #886a11;
 	cursor: default;
+	animation: color-change 4s infinite reverse;
 }
 
 .line-hidden {
@@ -57,7 +66,7 @@
 	flex-grow: 2;
 	border-bottom: 2px solid #e7d59f;
 	margin: 10px;
-	animation: flexgrow 1s, color-change 4s infinite;
+	animation: flexgrow 1s, border-color-change 4s infinite reverse;
 }
 
 @keyframes flexgrow {
@@ -69,14 +78,26 @@
 	}
 }
 
-@keyframes color-change {
+@keyframes border-color-change {
 	0% {
-		border-bottom: 2px solid #e7d59f;
+		border-bottom: 2px solid #be951e;
 	}
 	50% {
 		border-bottom: 2px solid #688ed2;
 	}
 	100% {
-		border-bottom: 2px solid #e7d59f;
+		border-bottom: 2px solid #be951e;
+	}
+}
+
+@keyframes color-change {
+	0% {
+		color: #be951e;
+	}
+	50% {
+		color: #688ed2;
+	}
+	100% {
+		color: #be951e;
 	}
 }
