@@ -1,6 +1,64 @@
 .services-details {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    overflow: auto;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	overflow-y: auto;
+	color: #082728;
+	padding: 10px 30px 30px 10px;
+}
+
+.services-container {
+	/* padding: 20px; */
+	background: rgb(255, 255, 255);
+	border-radius: 7px;
+	box-shadow: 2px 2px 8px -5px rgba(3, 20, 52, 0.1);
+	width: 100%;
+	overflow-y: scroll;
+}
+
+.service {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 1) 12%,
+		rgba(247, 247, 247, 1) 100%
+	);
+	border-top: 1.5px solid #f6f7f7;
+	border-bottom: 1.5px solid #d6dddd;
+	padding: 30px 20px;
+}
+
+.service-icon-container {
+	overflow: hidden;
+}
+
+.service-icon {
+	overflow: hidden;
+}
+
+.icon-stroke {
+	stroke: #264a8d;
+}
+
+.icon-fill {
+	fill: #264a8d;
+}
+
+.service h3 {
+	padding: 10px;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.service p {
+	overflow: hidden;
+	text-align: center;
+	padding: 10px;
 }

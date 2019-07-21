@@ -20,7 +20,7 @@ const CreditsDetails = ({ onSectionClick }) => {
 		},
 		{
 			id: 4,
-			credit: '2016 SUmmer Olympic Games',
+			credit: '2016 Summer Olympic Games',
 		},
 		{
 			id: 5,
@@ -60,7 +60,7 @@ const CreditsDetails = ({ onSectionClick }) => {
 				>
 					<div className="credits-container">
 						<div>
-							<h3>Credits include (partial list):</h3>
+							<h3 className="credits-title">Credits include (partial list):</h3>
 							<ul className="credits-list">{creditsList}</ul>
 						</div>
 						<ImageGallery />

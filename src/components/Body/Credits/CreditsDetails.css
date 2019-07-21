@@ -12,28 +12,50 @@
 	grid-template-columns: 1fr 1fr;
 	justify-items: center;
 	padding: 20px;
-	/* background-image: linear-gradient(#ebf0f0, #f6f4ed); */
-	background-color: #ebf0f0;
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 1) 12%,
+		rgba(247, 247, 247, 1) 100%
+	);
 	border-radius: 7px;
-	box-shadow: 2px 2px 12px -5px rgba(3, 20, 52, 0.2);
+	box-shadow: 2px 2px 8px -5px rgba(3, 20, 52, 0.1);
+	border-top: 1.5px solid #f6f7f7;
+	border-bottom: 1.5px solid #d6dddd;
 }
 
 .credits-list {
 	overflow-x: scroll;
+	padding-top: 10px;
 }
 
 .bullet {
 	display: inline-block;
+	border-top: 0.5px solid #f6f7f7;
+	border-left: 0.5px solid #f6f7f7;
 	width: 0.7rem;
 	height: 0.7rem;
 	border-radius: 2px;
-	background-color: black;
 	transform: rotate(45deg);
 	margin-right: 5px;
-	background-color: #264a8d;
+	background: rgb(77, 117, 191);
+	background: linear-gradient(
+		135deg,
+		rgba(77, 117, 191, 1) 0%,
+		rgba(77, 117, 191, 1) 12%,
+		rgba(38, 74, 141, 1) 82%,
+		rgba(251, 251, 251, 1) 100%
+	);
 }
 
 .credit {
-	margin: 0.5rem 0;
 	padding: 0 0.5rem;
+	font-size: 1em;
+	line-height: 2.5em;
+}
+
+.credits-title {
+	padding: 10px 10px 15px 0;
+	font-size: 1.4em;
 }

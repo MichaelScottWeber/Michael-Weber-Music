@@ -1,3 +1,37 @@
 .contact-details {
-    overflow: auto;
+	overflow: auto;
+	height: 100%;
+	width: 100%;
+	padding: 10px;
+}
+
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	border-radius: 7px;
+	box-shadow: 2px 2px 8px -5px rgba(3, 20, 52, 0.1);
+}
+
+.contact-container div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1.5px solid #f6f7f7;
+	border-bottom: 1.5px solid #d6dddd;
+	flex-grow: 1;
+}
+
+div a {
+	color: #264a8d;
+	transition: all 0.2s;
+}
+
+div a:hover,
+div a:focus {
+	color: #be951e;
 }

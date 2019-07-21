@@ -57,44 +57,52 @@ class MusicPlayer extends React.Component {
 			{
 				id: 1,
 				title: 'Colours Run Together',
+				genre: 'cinemtaic folk',
 			},
 			{
 				id: 2,
 				title: "Let's Go",
+				genre: 'pop rock',
 			},
 			{
 				id: 3,
 				title: 'The Gates of Agartha',
+				genre: 'hybrid orchestral',
 			},
 			{
 				id: 4,
 				title: 'Dreams For Tomorrow',
+				genre: 'post rock',
 			},
 			{
 				id: 5,
 				title: 'Mountain Shade',
+				genre: 'indie folk',
 			},
 			{
 				id: 6,
 				title: 'Rev Me Up',
+				genre: 'garage rock',
 			},
 			{
 				id: 7,
 				title: 'The Finer Things',
+				genre: 'quirky orchestral',
 			},
 		].map(item => {
 			return (
 				<li className="song-item" key={item.id}>
-					<span
+					<div
+						onClick={() => this.setState({ selectedTrack: item.title })}
 						className={
 							item.title === this.state.selectedTrack
-								? 'song-title selected'
-								: 'song-title'
+								? 'song-text selected'
+								: 'song-text not-selected'
 						}
-						onClick={() => this.setState({ selectedTrack: item.title })}
 					>
-						{item.title}
-					</span>
+						<p className="song-title">{item.title}</p>
+						<p className="song-genre">{item.genre}</p>
+					</div>
 					<div
 						className={
 							item.title === this.state.selectedTrack
