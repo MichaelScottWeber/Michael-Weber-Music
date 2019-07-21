@@ -27,11 +27,33 @@
 }
 
 div a {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	color: #264a8d;
+	text-decoration: none;
 	transition: all 0.2s;
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 1) 12%,
+		rgba(247, 247, 247, 1) 100%
+	);
 }
 
 div a:hover,
 div a:focus {
 	color: #be951e;
+	background: linear-gradient(
+		180deg,
+		rgba(250, 250, 250, 1) 0%,
+		rgba(250, 250, 250, 1) 12%,
+		rgba(242, 242, 242, 1) 100%
+	);
+}
+
+.link-text {
+	margin-left: 10px;
 }

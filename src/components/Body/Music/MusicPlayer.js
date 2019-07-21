@@ -91,15 +91,16 @@ class MusicPlayer extends React.Component {
 			},
 		].map(item => {
 			return (
-				<li className="song-item" key={item.id}>
-					<div
-						onClick={() => this.setState({ selectedTrack: item.title })}
-						className={
-							item.title === this.state.selectedTrack
-								? 'song-text selected'
-								: 'song-text not-selected'
-						}
-					>
+				<li
+					onClick={() => this.setState({ selectedTrack: item.title })}
+					key={item.id}
+					className={
+						item.title === this.state.selectedTrack
+							? 'song-item selected'
+							: 'song-item not-selected'
+					}
+				>
+					<div className="song-text">
 						<p className="song-title">{item.title}</p>
 						<p className="song-genre">{item.genre}</p>
 					</div>
