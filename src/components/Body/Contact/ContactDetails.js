@@ -12,7 +12,7 @@ const ContactDetails = () => {
 			{props => (
 				<section style={props} className="contact-details">
 					<div className="contact-container">
-						<div>
+						<div className="contact-item">
 							<a href="mailto:mike@michaelwebermusic.com">
 								<svg
 									className="contact-icon"
@@ -33,7 +33,7 @@ const ContactDetails = () => {
 								<span className="link-text">Email</span>
 							</a>
 						</div>
-						<div>
+						<div className="contact-item">
 							<a href="https://twitter.com/iammichaelweber" target="_blank">
 								<svg
 									className="contact-icon"
@@ -53,7 +53,7 @@ const ContactDetails = () => {
 								<span className="link-text">Twitter</span>
 							</a>
 						</div>
-						<div>
+						<div className="contact-item">
 							<a
 								href="https://www.instagram.com/michaelwebermusic/"
 								target="_blank"

@@ -17,12 +17,22 @@
 	box-shadow: 2px 2px 12px -5px rgba(3, 20, 52, 0.5);
 }
 
-@media only screen and (max-width: 600px) {
+.about-details p {
+	padding: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
 	.about-details {
-		height: 100%;
+		padding: 0 20px 0 0;
 	}
 }
 
-.about-details p {
-	margin: 10px;
+@media only screen and (max-width: 700px) {
+	.about-details {
+		padding: 0;
+	}
+	.about-details-container {
+		height: 100%;
+		border-radius: 0;
+	}
 }

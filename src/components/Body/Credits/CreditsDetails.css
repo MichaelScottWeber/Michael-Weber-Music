@@ -59,3 +59,25 @@
 	padding: 10px 10px 15px 0;
 	font-size: 1.4em;
 }
+
+@media only screen and (max-width: 1000px) {
+	.credits-details {
+		padding: 0 0 0 20px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.credits-details {
+		padding: 0;
+		/* height: 300px; */
+	}
+
+	.credits-container {
+		display: block;
+		border-radius: 0;
+	}
+
+	.credits-list {
+		margin-bottom: 30px;
+	}
+}

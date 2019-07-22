@@ -62,3 +62,20 @@
 	text-align: center;
 	padding: 10px;
 }
+
+@media only screen and (max-width: 1000px) {
+	.services-details {
+		padding: 0 20px 0 0;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.services-details {
+		padding: 0;
+	}
+
+	.services-container {
+		border-radius: 0;
+		box-shadow: none;
+	}
+}

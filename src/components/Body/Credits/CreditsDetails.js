@@ -63,7 +63,7 @@ const CreditsDetails = ({ onSectionClick }) => {
 							<h3 className="credits-title">Credits include (partial list):</h3>
 							<ul className="credits-list">{creditsList}</ul>
 						</div>
-						<ImageGallery />
+						<ImageGallery className="gallery" />
 					</div>
 				</section>
 			)}
