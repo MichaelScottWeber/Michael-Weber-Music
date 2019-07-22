@@ -1,5 +1,5 @@
 .music-player {
-	color: #082728;
+	color: #264a8d;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -24,6 +24,7 @@
 	margin-bottom: 10px;
 	overflow: hidden;
 	font-size: 1.5em;
+	color: #082728;
 }
 
 .song-item {
@@ -48,6 +49,7 @@
 
 .song-title {
 	font-size: 1em;
+	font-weight: 500;
 }
 
 .song-genre {
@@ -58,14 +60,9 @@
 
 .not-selected:hover,
 .not-selected:focus {
-	color: #4d75bf;
+	color: #be951e;
 	cursor: pointer;
-	background: linear-gradient(
-		180deg,
-		rgba(250, 250, 250, 1) 0%,
-		rgba(250, 250, 250, 1) 12%,
-		rgba(242, 242, 242, 1) 100%
-	);
+	background: #f4f8ff;
 }
 
 .selected,
