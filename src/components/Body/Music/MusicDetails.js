@@ -1,5 +1,4 @@
 import React from 'react';
-import { Transition, animated } from 'react-spring/renderprops';
 import MusicPlayer from './MusicPlayer';
 import './MusicDetails.css';
 

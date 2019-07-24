@@ -16,12 +16,6 @@
 	overflow: hidden;
 }
 
-@media only screen and (max-width: 600px) {
-	.music-intro {
-		border-radius: 0;
-	}
-}
-
 .music-intro h2 {
 	position: relative;
 	z-index: 1;
@@ -44,4 +38,11 @@
 
 .music-intro .overlay:hover {
 	opacity: 0.3;
+}
+
+@media only screen and (max-width: 700px) {
+	.music-intro {
+		border-radius: 0;
+		height: 18vh;
+	}
 }

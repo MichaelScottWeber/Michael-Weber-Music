@@ -34,7 +34,11 @@ const ContactDetails = () => {
 							</a>
 						</div>
 						<div className="contact-item">
-							<a href="https://twitter.com/iammichaelweber" target="_blank">
+							<a
+								href="https://twitter.com/iammichaelweber"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								<svg
 									className="contact-icon"
 									xmlns="http://www.w3.org/2000/svg"
@@ -57,6 +61,7 @@ const ContactDetails = () => {
 							<a
 								href="https://www.instagram.com/michaelwebermusic/"
 								target="_blank"
+								rel="noopener noreferrer"
 							>
 								<svg
 									className="contact-icon"
